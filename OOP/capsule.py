@@ -18,13 +18,13 @@ class SquidGame: #객체 생성, 클래스 만들기
         return self.age
 
     @age.setter
-    def age(self, age)
-        if self.age > 40: and isinstance(self.age, str):
+    def age(self, age):
+        if self.age > 40 and isinstance(self.age, str):
             raise ValueError("나이가 40세를 넘었습니다!")
         self.age = age
 
 
-Squid_game1 = Squid_game("Kyu-seong",23)
+Squid_game1 = SquidGame("Kyu-seong",23)
 Squid_game1.age = 140
 
 
